@@ -1,0 +1,158 @@
+body {
+  background-image: linear-gradient(#001219, #0a9396);
+  font-family: "Lato", sans-serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 0.5em;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  box-sizing: border-box;
+  padding: 0.2em;
+  position: relative;
+  background-image: linear-gradient(to right, #0a9396, #94d2bd);
+  overflow: hidden;
+  border-radius: 1em;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.7s;
+}
+.topnav-right a:hover {
+  background-color: rgba(255, 255, 255, 0.322);
+  border-radius: 4em;
+  color: rgb(59, 59, 59);
+  transition: 0.7s;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a,
+  .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+#name {
+  font-family: "Passions Conflict", cursive;
+  font-size: 40px;
+  font-style: oblique;
+}
+#pfp {
+  display: block;
+  margin-top: 3em;
+}
+#pfp img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 12em;
+  display: block;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#aboutme {
+  color: antiquewhite;
+  text-align: center;
+}
+#aboutme h3 {
+  text-align: center;
+}
+#aboutme p {
+  margin-left: 2em;
+  margin-right: 2em;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+#pfp img:hover {
+  transition: 0.5s;
+  transform: scale(1.15);
+  box-shadow: 0px 0px 10px 10px rgba(173, 234, 255, 0.062);
+}
+#skills {
+  font-family: "Lato", sans-serif;
+  margin-top: 4em;
+  color: antiquewhite;
+  width: 100%;
+  text-align: center;
+}
+#skills img {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  width: 60px;
+  transition: 0.15s;
+}
+#skills img:hover {
+  transition: 0.15s;
+  transform: scale(1.15);
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+#projects {
+  width: 100%;
+  text-align: center;
+}
+#skills h3 {
+  margin-top: 5em;
+}
+
+.gallery img:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+/*                            LIFE  BAR                                 */
